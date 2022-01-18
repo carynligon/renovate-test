@@ -12,7 +12,5 @@ jobs:
         with:
           configurationFile: renovate.json
           token: ${{ secrets.RENOVATE_TOKEN }}
-          autodiscover: True
-          dryRun: True
         env:
           LOG_LEVEL: "debug"
