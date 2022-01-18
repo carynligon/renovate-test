@@ -1,25 +1,3 @@
 {
-  "extends": ["config:base"],
-  "automerge": true,
-  "commitMessage": "{{semanticPrefix}}Update {{depName}} to {{newVersion}} 🌟",
-  "prTitle": "{{semanticPrefix}}{{#if isPin}}Pin{{else}}Update{{/if}} dependency {{depName}} to version {{newVersion}} 🌟",
-  "major": {
-    "automerge": false
-  },
-  "minor": {
-    "automerge": true
-  },
-  "prConcurrentLimit": 3,
-  "prHourlyLimit": 2,
-  "updateNotScheduled": false,
-  "lockFileMaintenance": {
-    "enabled": true
-  },
-  "separatePatchReleases": true,
-  "separateMultipleMajor": true,
-  "masterIssue": true,
-  "labels": ["type: dependencies", "renovate"],
-  "npm": {
-    "enabled": true
-  }
+  "extends": ["config:base"]
 }
