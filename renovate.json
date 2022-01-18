@@ -12,7 +12,6 @@
   "prConcurrentLimit": 3,
   "prHourlyLimit": 2,
   "updateNotScheduled": false,
-  "timezone": "America/Chicago",
   "lockFileMaintenance": {
     "enabled": true
   },
@@ -20,14 +19,7 @@
   "separateMultipleMajor": true,
   "masterIssue": true,
   "labels": ["type: dependencies", "renovate"],
-  "packageRules": [
-    {
-      "packagePatterns": "^react",
-      "groupName": "react"
-    },
-    {
-      "packagePatterns": "^testing-library",
-      "groupName": "testing-library"
-    }
-  ]
+  "npm": {
+    "enabled": true
+  }
 }
