@@ -1,5 +1,18 @@
 {
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": ["config:base"],
-  "dryRun": true,
-  "autoDiscover": true
+  "node": {
+    "enabled": true
+  },
+  "nvm": {
+    "enabled": true
+  },
+  "js": {
+    "enabled": true,
+    "ignoreDeps": []
+  },
+  "autodiscover": true,
+  "autodiscoverFilter": "carynligon/renovate-test",
+  "onboarding": false,
+  "requireConfig": false
 }
