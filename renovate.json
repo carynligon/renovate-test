@@ -12,7 +12,7 @@
     "ignoreDeps": []
   },
   "dryRun": true,
-  "autoDiscover": true,
+  "autodiscover": true,
   "branchPrefix": "/dep",
   "onboarding": false,
   "requireConfig": false
