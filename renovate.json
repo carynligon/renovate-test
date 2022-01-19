@@ -15,14 +15,14 @@
   "autodiscoverFilter": "carynligon/renovate-test",
   "onboarding": false,
   "requireConfig": false,
+  "groupName": "all dependencies",
+  "separateMajorMinor": false,
+  "groupSlug": "all",
   "packageRules": [
     {
-      "matchUpdateTypes": ["patch", "minor"],
-      "groupName": "Dependencies (non-major)"
-    },
-    {
-      "matchUpdateTypes": ["major"],
-      "groupName": "Dependencies (MAJOR)"
+      "matchPackagePatterns": ["*"],
+      "groupName": "all dependencies",
+      "groupSlug": "all"
     }
   ]
 }
