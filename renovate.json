@@ -13,6 +13,9 @@
   },
   "dryRun": true,
   "autodiscover": true,
+  {
+    "autodiscoverFilter": "renovate-test"
+  }
   "branchPrefix": "/dep",
   "onboarding": false,
   "requireConfig": false
