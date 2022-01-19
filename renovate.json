@@ -14,5 +14,27 @@
   "autodiscover": true,
   "autodiscoverFilter": "carynligon/renovate-test",
   "onboarding": false,
-  "requireConfig": false
+  "requireConfig": false,
+  "packageRules": [
+    {
+      "matchDepTypes": ["dependencies"],
+      "matchUpdateTypes": ["patch", "minor"],
+      "groupName": "Dependencies (non-major)"
+    },
+    {
+      "matchDepTypes": ["dependencies"],
+      "matchUpdateTypes": ["major"],
+      "groupName": "Dependencies (MAJOR)"
+    },
+    {
+      "matchDepTypes": ["devDependencies"],
+      "matchUpdateTypes": ["patch", "minor"],
+      "groupName": "devDependencies (non-major)"
+    },
+    {
+      "matchDepTypes": ["devDependencies"],
+      "matchUpdateTypes": ["major"],
+      "groupName": "devDependencies (MAJOR)"
+    }
+  ]
 }
